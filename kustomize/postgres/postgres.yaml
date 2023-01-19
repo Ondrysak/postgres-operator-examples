@@ -25,3 +25,11 @@ spec:
             resources:
               requests:
                 storage: 1Gi
+  service:
+    metadata:
+      annotations:
+        my-annotation: value1
+      labels:
+        my-label: value2
+    type: NodePort
+    nodePort: 32000
